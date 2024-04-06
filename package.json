@@ -1,0 +1,29 @@
+{
+  "name": "idpay-tools",
+  "version": "1.0.0",
+  "description": "یک پکیج بسیار عالی برای استفاده از درگاه آیدی پی",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psychotaha/idpay-tools.git"
+  },
+  "keywords": [
+    "idpay",
+    "آیدیپی",
+    "درگاه",
+    "پرداخت",
+    "آیدی پی"
+  ],
+  "author": "psychotaha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psychotaha/idpay-tools/issues"
+  },
+  "homepage": "https://github.com/psychotaha/idpay-tools#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
