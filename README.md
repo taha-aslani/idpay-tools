@@ -2,13 +2,11 @@
 
 <p id="description">یک پکیج بسیار عالی برای استفاده از درگاه آیدی پی</p>
 
-<p align="center"><img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-1.0.1-blue" alt="shields"><img src="https://img.shields.io/badge/License-MIT-blue" alt="shields"></p>
 
   
   
-<h2>🧐 Features</h2>
-
-Here're some of the project's best features:
+<h2>ویژگی ها:</h2>
 
 *   ساختن پیمنت
 *   وریفای کردن بعد از پرداخت
@@ -58,3 +56,5 @@ async function test() {
 
 test()
 ```
+<h2>صفحه npmjs :</h2>
+<a href="https://www.npmjs.com/package/idpay-tools" target="_blank">NPMJS</a>
