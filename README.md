@@ -8,16 +8,12 @@
   
 
 <h2>ویژگی ها:</h2>
->>>>>>> 4b8039b0d9ee0b7ca2ecf745a2b38930d7306976
 
 *   ساختن پیمنت
 *   وریفای کردن بعد از پرداخت
 *   چک کردن پیمنت
 
-<<<<<<< HEAD
 <h2>🛠️ مراحل نصب:</h2>
-=======
->>>>>>> 4b8039b0d9ee0b7ca2ecf745a2b38930d7306976
 
 <p>1. نصب</p>
 
@@ -61,8 +57,6 @@ async function test() {
 
 test()
 ```
-<<<<<<< HEAD
-=======
+
 <h2>صفحه npmjs :</h2>
 <a href="https://www.npmjs.com/package/idpay-tools" target="_blank">NPMJS</a>
->>>>>>> 4b8039b0d9ee0b7ca2ecf745a2b38930d7306976
