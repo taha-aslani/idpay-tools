@@ -42,7 +42,7 @@ idpay.prototype.createTransaction = function(optionsbodyct) {
 
 /**
  * verify a transaction
- * @param optionsbodyvp Options | ID and Order_ID
+ * @param optionsbodyvp Options | ID and Order ID
  * @returns Transaction verification Status
 */
 idpay.prototype.verifyPayment = function(optionsbodyvp) {
