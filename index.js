@@ -4,8 +4,8 @@ var request = require("request");
 
 /**
  * Create new connection
- * @param apiKey Your IDPay apiKey
- * @param standbox Standbox status(debugmode) [true & false]
+ * @param api Your IDPay api
+ * @param debugmode Sandbox status(debugmode) [true & false]
  * @returns new idpay class
  */
 function idpay(api, debugmode){

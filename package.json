@@ -1,6 +1,6 @@
 {
   "name": "idpay-tools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "یک پکیج بسیار عالی برای استفاده از درگاه آیدی پی",
   "main": "index.js",
   "scripts": {
