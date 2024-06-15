@@ -1,6 +1,6 @@
 {
   "name": "idpay-tools",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "یک پکیج بسیار عالی برای استفاده از درگاه آیدی پی",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/psychotaha/idpay-tools.git"
+    "url": "git+https://github.com/Gamer-Bashi/idpay-tools.git"
   },
   "keywords": [
     "idpay",
@@ -20,10 +20,10 @@
   "author": "psychotaha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/psychotaha/idpay-tools/issues"
+    "url": "https://github.com/Gamer-Bashi/idpay-tools/issues"
   },
-  "homepage": "https://github.com/psychotaha/idpay-tools#readme",
+  "homepage": "https://github.com/Gamer-Bashi/idpay-tools#readme",
   "dependencies": {
-    "request": "^2.88.2"
+    "axios": "^1.7.2"
   }
 }

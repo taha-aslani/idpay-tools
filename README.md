@@ -2,7 +2,7 @@
 
 <p id="description">یک پکیج بسیار عالی برای استفاده از درگاه آیدی پی</p>
 
-<p align="center"><img src="https://img.shields.io/badge/Version-1.0.4-blue" alt="shields"> <img src="https://img.shields.io/badge/License-MIT-blue" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-1.0.5-blue" alt="shields"> <img src="https://img.shields.io/badge/License-MIT-blue" alt="shields"></p>
 
   
 

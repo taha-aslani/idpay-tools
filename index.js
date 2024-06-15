@@ -1,11 +1,11 @@
 "use strict";
 
-var request = require("request");
+const axios = require('axios');
 
 /**
  * Create new connection
- * @param api Your IDPay api
- * @param debugmode Sandbox status(debugmode) [true & false]
+ * @param {String} apiKey Your IDPay apiKey
+ * @param {boolean} standbox Standbox status(debugmode) [true & false]
  * @returns new idpay class
  */
 function idpay(api, debugmode){
@@ -21,49 +21,33 @@ function idpay(api, debugmode){
  * @returns Transaction ID and Link
 */
 idpay.prototype.createTransaction = function(optionsbodyct) {
-    var optionsct = {
-        method: "POST",
-        url: "https://api.idpay.ir/v1.1/payment",
-        headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": this._apiKey,
-            "X-SANDBOX": this.sbox == true ? 1 : 0
-        },
-        body: optionsbodyct,
-        json: true
-    };
     return new Promise((resolve, reject) => {
-         request(optionsct, function(err, resp, body) {
-            if (err) reject(err);
-            resolve(body);
-        });
+        axios.post("https://api.idpay.ir/v1.1/payment", optionsbodyct, {
+            headers: {
+                "Content-Type": "application/json",
+                "X-API-KEY": this._apiKey,
+                "X-SANDBOX": this.sbox == true ? 1 : 0
+            }
+        }).then( res => resolve(res.data) ).catch( err => reject(err) )
     });
 };
 
 /**
  * verify a transaction
- * @param optionsbodyvp Options | ID and Order ID
+ * @param optionsbodyvp Options | ID and Order_ID
  * @returns Transaction verification Status
 */
 idpay.prototype.verifyPayment = function(optionsbodyvp) {
-    var optionsvp = {
-        method: "POST",
-        url: "https://api.idpay.ir/v1.1/payment/verify",
-        headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": this._apiKey,
-            "X-SANDBOX": this.sbox == true ? 1 : 0
-        },
-        body: optionsbodyvp,
-        json: true
-    };
     return new Promise((resolve, reject) => {
-         request(optionsvp, function(err, resp, body) {
-            if (err) reject(err);
-            resolve(body);
-        });
+        axios.post("https://api.idpay.ir/v1.1/payment/verify", optionsbodyvp, {
+            headers: {
+                "Content-Type": "application/json",
+                "X-API-KEY": this._apiKey,
+                "X-SANDBOX": this.sbox == true ? 1 : 0
+            }
+        }).then( res => resolve(res.data) ).catch( err => reject(err) )
     });
-}
+};
 
 /**
  * gets a transaction status
@@ -71,23 +55,15 @@ idpay.prototype.verifyPayment = function(optionsbodyvp) {
  * @returns Transaction Status
 */
 idpay.prototype.transactionStatus = function(optionsbodyts) {
-    var optionsts = {
-        method: "POST",
-        url: "https://api.idpay.ir/v1.1/payment/inquiry",
-        headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": this._apiKey,
-            "X-SANDBOX": this.sbox == true ? 1 : 0
-        },
-        body: optionsbodyts,
-        json: true
-    };
     return new Promise((resolve, reject) => {
-         request(optionsts, function(err, resp, body) {
-            if (err) reject(err);
-            resolve(body);
-        });
+        axios.post("https://api.idpay.ir/v1.1/payment/inquiry", optionsbodyts, {
+            headers: {
+                "Content-Type": "application/json",
+                "X-API-KEY": this._apiKey,
+                "X-SANDBOX": this.sbox == true ? 1 : 0
+            }
+        }).then( res => resolve(res.data) ).catch( err => reject(err) )
     });
-}
+};
 
 exports.idpay = idpay;
